@@ -28,13 +28,13 @@
     "@types/express": "^5.0.3",
     "@types/node": "^24.2.0",
     "nodemon": "^3.1.10",
-
+    "typescript": "^5.9.2"
   },
   "homepage": "https://github.com/Simfort/grown-a-garden-api",
   "type": "module",
   "dependencies": {
     "axios": "^1.11.0",
-    "cheerio": "^1.1.2",    "typescript": "^5.9.2",
+    "cheerio": "^1.1.2",
     "garden-grown-api": "^1.0.1"
   }
 }
