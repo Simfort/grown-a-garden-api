@@ -18,9 +18,6 @@
     "grownagarden"
   ],
   "author": "David Lemondzava",
-  "licenses": [
-    "MIT"
-  ],
   "license": "ISC",
   "description": "garden-grown-api is a modular library for working with garden processes, providing a set of functions for managing plants, harvests, and agricultural techniques. The library can be easily integrated into existing projects.",
   "devDependencies": {
