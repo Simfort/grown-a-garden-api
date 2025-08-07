@@ -33,3 +33,4 @@ async function checkForUpdates() {
 // }
 
 // Запуск мониторинга
+export default checkForUpdates;

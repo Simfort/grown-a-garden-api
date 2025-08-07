@@ -26,3 +26,4 @@ async function checkForUpdates() {
 //   await setInterval(checkForUpdates, 10000);
 // }
 // Запуск мониторинга
+export default checkForUpdates;

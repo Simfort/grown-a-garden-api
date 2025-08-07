@@ -11,6 +11,7 @@
     "target": "esnext",
     "moduleResolution": "nodenext",
     "types": [],
+    "declaration": true,
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
