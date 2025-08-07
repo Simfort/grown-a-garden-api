@@ -1,6 +1,6 @@
 {
   "name": "garden-grown-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/stock.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,8 +23,6 @@
   "license": "ISC",
   "description": "garden-grown-api is a modular library for working with garden processes, providing a set of functions for managing plants, harvests, and agricultural techniques. The library can be easily integrated into existing projects.",
   "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.2.0",
     "nodemon": "^3.1.10",
     "typescript": "^5.9.2"
   },
