@@ -1,6 +1,6 @@
 import { StockItem } from "./types.js";
 
-export default function formating(str: string) {
+export function formatingEGG_GEAR_SEED(str: string) {
   let format: string[] | string = "";
   for (let i = 0; i < str.length; i++) {
     if (str[i] == "\n" || str[i] == " ") {
@@ -82,4 +82,51 @@ export default function formating(str: string) {
   }
 
   return { eggs, seeds, gears };
+}
+export function formatingEVENT(str: string) {
+  let format: string[] | string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == "\n" || str[i] == " ") {
+      continue;
+    }
+    format += str[i];
+    if (str[i - 1] == "x" && Number.isInteger(+str[i])) {
+      format += " ";
+    }
+  }
+  format = format.split(" ");
+  const event: StockItem[] = [];
+  for (let i = 0; i < format.length - 1; i++) {
+    const item = format[i];
+    event.push({
+      name: item.slice(0, item.length - 2),
+      count: Number(item[item.length - 1]),
+    });
+  }
+
+  return { event };
+}
+export function formatingCOSMETICS(str: string) {
+  let format: string[] | string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == "\n" || str[i] == " ") {
+      continue;
+    }
+    format += str[i];
+    if (str[i - 1] == "x" && Number.isInteger(+str[i])) {
+      format += " ";
+    }
+  }
+  format = format.split(" ");
+  console.log(format);
+  const cosmetics: StockItem[] = [];
+  for (let i = 0; i < format.length - 1; i++) {
+    const item = format[i];
+    cosmetics.push({
+      name: item.slice(0, item.length - 2),
+      count: Number(item[item.length - 1]),
+    });
+  }
+
+  return { cosmetics };
 }
